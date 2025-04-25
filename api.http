@@ -1,7 +1,27 @@
 GET http://localhost:8000/products/ HTTP/1.1
 
 ###
+GET http://localhost:8000/products/2/ HTTP/1.1
 
+###
+PUT http://localhost:8000/products/2/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1NTkzNTkzLCJpYXQiOjE3NDU1OTMyOTMsImp0aSI6IjIyZTAzNjNmNDk5ZTQxYmY4NTI3Mjc5MmEwZmY4YTA2IiwidXNlcl9pZCI6MX0.jUIDIiNPriGGdZzs8aKSIxJYi84AVNjWRHSyvW_BMIQ
+
+{
+    "name": "put1",
+    "price": 300.00,
+    "stock": 14,
+    "description": "New TV1"
+}
+
+###
+DELETE http://localhost:8000/products/2/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1NTkzNTkzLCJpYXQiOjE3NDU1OTMyOTMsImp0aSI6IjIyZTAzNjNmNDk5ZTQxYmY4NTI3Mjc5MmEwZmY4YTA2IiwidXNlcl9pZCI6MX0.jUIDIiNPriGGdZzs8aKSIxJYi84AVNjWRHSyvW_BMIQ
+
+
+
+###
 POST http://localhost:8000/products/ HTTP/1.1
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1NTA2OTYzLCJpYXQiOjE3NDU1MDY2NjMsImp0aSI6IjRkMzY3YjU3MWUzNjQzM2NiZDAwZWI3OGFhNWE5MzU2IiwidXNlcl9pZCI6MX0.ZeGBSWkNAvwXlcP0Nc0tUmK0UXMFk-Ds1cEwBmRd_1I
